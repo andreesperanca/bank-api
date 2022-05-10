@@ -4,6 +4,6 @@ import com.bankline_api.models.Correntista;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface CorrestistaRepository extends JpaRepository<Correntista, Integer> {
+public interface CorrentistaRepository extends JpaRepository<Correntista, Integer> {
 
 }

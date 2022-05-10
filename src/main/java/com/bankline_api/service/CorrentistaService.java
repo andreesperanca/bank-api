@@ -4,7 +4,7 @@ package com.bankline_api.service;
 import com.bankline_api.dto.NovoCorrentista;
 import com.bankline_api.models.Conta;
 import com.bankline_api.models.Correntista;
-import com.bankline_api.repository.CorrestistaRepository;
+import com.bankline_api.repository.CorrentistaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ import java.util.Date;
 public class CorrentistaService {
 
     @Autowired
-    private CorrestistaRepository repository;
+    private CorrentistaRepository repository;
 
     public void save(NovoCorrentista novoCorrentista) {
         Correntista correntista = new Correntista();

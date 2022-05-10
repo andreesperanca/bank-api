@@ -1,6 +1,8 @@
 package com.bankline_api.models;
 
 import com.bankline_api.models.MovimentacaoTipo;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jdk.vm.ci.meta.Local;
 
 import java.time.LocalDateTime;
 
@@ -15,6 +17,7 @@ public class Movimentacao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "data_hora")
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataHora;
     private String descricao;
     private double valor;
