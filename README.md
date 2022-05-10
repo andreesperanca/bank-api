@@ -10,9 +10,9 @@
 </h1>
 
 ### Sobre :book:
- API feita durante a SANTANDER DEV WEEK com o objetivo de simular o back-end de um banco, utilizando Spring Boot, Java e documentada com o Swagger.
- obs : utilizada no aplicativo bank app no repositório : https://github.com/andreesperanca/bank-app
+ API feita durante a SANTANDER DEV WEEK com o objetivo de simular o back-end de um banco, utilizando Spring Boot, Java e documentada com o Swagger. Foi usada para a criação do aplicativo bank app no repositório : https://github.com/andreesperanca/bank-app
  
+
  ### Tecnologias :rocket:
 
  - Java 
