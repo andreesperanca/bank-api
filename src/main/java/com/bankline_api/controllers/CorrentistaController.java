@@ -24,7 +24,7 @@ public class CorrentistaController {
     }
 
     @PostMapping
-    public void save(@RequestBody NovoCorrentista correntista) {
+    public void save (@RequestBody NovoCorrentista correntista) {
         service.save(correntista);
 
     }

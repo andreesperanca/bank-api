@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/movimentacoes")
-
 public class MovimentacaoController {
     @Autowired
     private MovimentacaoRepository repository;
@@ -27,8 +26,14 @@ public class MovimentacaoController {
     public List<Movimentacao> findAll() {
         return repository.findAll();
     }
+
     @PostMapping
     public void save(@RequestBody NovaMovimentacao movimentacao) {
         service.save(movimentacao);
+    }
+
+    @GetMapping("/{idConta}")
+    public List<Movimentacao> findAll(@PathVariable("idConta") Integer idConta) {
+        return repository.findByIdConta(idConta);
     }
 }
